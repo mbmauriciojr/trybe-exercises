@@ -20,3 +20,8 @@ function changeText() {
 }
 changeText();
 
+function changeSquareColor() {
+  let colorChange = document.getElementsByClassName('main-content')[0];
+  colorChange.style.backgroundColor = 'rgb(76, 164, 109)';
+}
+changeSquareColor();
