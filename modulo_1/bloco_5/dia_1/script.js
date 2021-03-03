@@ -32,3 +32,8 @@ function changeRedSquare() {
 }
 changeRedSquare();
 
+function correctHeading1() {
+  let heading1Correct = document.getElementsByTagName('h1')[0];
+  heading1Correct.innerText = 'Exercício 5.1 - JavaScript';
+}
+correctHeading1();
