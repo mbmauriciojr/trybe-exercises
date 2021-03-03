@@ -37,3 +37,9 @@ function correctHeading1() {
   heading1Correct.innerText = 'Exercício 5.1 - JavaScript';
 }
 correctHeading1();
+
+function capsAllParagraph() {
+  let charactersChange = document.getElementsByTagName('p')[0];
+  charactersChange.style.textTransform = 'uppercase';
+}
+capsAllParagraph();
