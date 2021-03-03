@@ -25,3 +25,10 @@ function changeSquareColor() {
   colorChange.style.backgroundColor = 'rgb(76, 164, 109)';
 }
 changeSquareColor();
+
+function changeRedSquare() {
+  let squareChange = document.getElementsByClassName('center-content')[0];
+  squareChange.style.backgroundColor = 'white';
+}
+changeRedSquare();
+
