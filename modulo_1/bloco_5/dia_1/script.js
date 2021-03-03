@@ -43,3 +43,11 @@ function capsAllParagraph() {
   charactersChange.style.textTransform = 'uppercase';
 }
 capsAllParagraph();
+
+function allParagraphs() {
+  let showParagraphs = document.getElementsByTagName('p');
+  for (index = 0; index < showParagraphs.length; index += 1) {
+    console.log(showParagraphs[index].innerHTML);
+  }
+}
+allParagraphs();
