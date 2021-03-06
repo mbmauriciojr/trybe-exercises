@@ -78,4 +78,7 @@ tagH1.className = 'title';
  // Exercício 5.2
  let changeBgColor = document.querySelector('.center-content').parentElement;
  changeBgColor.style.backgroundColor = 'green';
- 
+
+ // Exercício 6.2
+ulDivRight.lastChild.remove();
+ulDivRight.lastChild.remove();
