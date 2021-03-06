@@ -41,14 +41,7 @@ document.querySelector('.right-content').appendChild(ulDivRight);
 
 let arrayValues = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10' ];
 
-// Solução do gabarito
-/*for (let value in arrayValues) {
-  let liDivRight = document.createElement('li');
-  liDivRight.innerHTML = arrayValues[value];
-  ulDivRight.appendChild(liDivRight);
-}*/
-
-// Solução que eu cheguei antes, mas que concluí ao entender o chamado da ul!
+// Solução que eu cheguei antes, mas que concluí ao entender o chamado da ul e da criação da Li dentro do laço via gabarito!
 for (let index = 1; index <= 10; index += 1) {
   let liDivRight = document.createElement('li');
   liDivRight.innerHTML = index;
@@ -63,3 +56,8 @@ for (let index = 1; index <= 3; index += 1) {
   divElement.appendChild(headingMain);
 }
 
+
+// SEGUNDA PARTE
+
+// Exercício 1.2
+tagH1.className = 'title';
