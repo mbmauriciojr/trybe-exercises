@@ -34,3 +34,23 @@ let imgDivLeft = document.createElement('img');
 imgDivLeft.src = 'https://picsum.photos/200';
 imgDivLeft.className = 'small-image';
 document.querySelector('.left-content').appendChild(imgDivLeft);
+
+// Exercício 8
+let ulDivRight = document.createElement('ul');
+document.querySelector('.right-content').appendChild(ulDivRight);
+
+let arrayValues = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10' ];
+
+// Solução do gabarito
+/*for (let value in arrayValues) {
+  let liDivRight = document.createElement('li');
+  liDivRight.innerHTML = arrayValues[value];
+  ulDivRight.appendChild(liDivRight);
+}*/
+
+// Solução que eu cheguei antes, mas que concluí ao entender o chamado da ul!
+for (index = 1; index <= 10; index += 1) {
+  let liDivRight = document.createElement('li');
+  liDivRight.innerHTML = index;
+  ulDivRight.appendChild(liDivRight);
+}
