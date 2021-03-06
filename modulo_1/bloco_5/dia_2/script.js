@@ -16,3 +16,8 @@ let divCenter = document.createElement('div');
 divCenter.className = 'center-content';
 document.querySelector('.main-content').appendChild(divCenter);
 
+// Exercício 4
+
+let paragraphCenterContent = document.createElement('p');
+paragraphCenterContent.innerText = 'Estamos aqui criando elementos pelo Javascript, obrigado pela atenção!';
+document.querySelector('.center-content').appendChild(paragraphCenterContent);
