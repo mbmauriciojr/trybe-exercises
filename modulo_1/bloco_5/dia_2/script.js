@@ -72,4 +72,6 @@ tagH1.className = 'title';
  let deleteDivContent = document.querySelector('.left-content');
  divElement.removeChild(deleteDivContent);
 
+ // Exercício 4.2
+ divRight.style.marginRight = 'auto';
  
