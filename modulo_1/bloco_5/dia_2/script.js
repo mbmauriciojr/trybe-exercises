@@ -49,8 +49,17 @@ let arrayValues = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10' ];
 }*/
 
 // Solução que eu cheguei antes, mas que concluí ao entender o chamado da ul!
-for (index = 1; index <= 10; index += 1) {
+for (let index = 1; index <= 10; index += 1) {
   let liDivRight = document.createElement('li');
   liDivRight.innerHTML = index;
   ulDivRight.appendChild(liDivRight);
 }
+
+
+// Exercício 9
+for (let index = 1; index <= 3; index += 1) {
+  let headingMain = document.createElement('h3');
+  headingMain.innerHTML = 'Olá' + index;
+  divElement.appendChild(headingMain);
+}
+
