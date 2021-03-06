@@ -67,3 +67,9 @@ tagH1.className = 'title';
  for (let index = 0; index < 3; index += 1) {
    elementsH3[index].className = 'description';
  }
+
+ // Exercício 3.2
+ let deleteDivContent = document.querySelector('.left-content');
+ divElement.removeChild(deleteDivContent);
+
+ 
