@@ -61,3 +61,9 @@ for (let index = 1; index <= 3; index += 1) {
 
 // Exercício 1.2
 tagH1.className = 'title';
+
+// Exercício 2.2
+ elementsH3 = document.querySelectorAll('.main-content h3'); // seguindo a linha de pensamento antes de olhar o gabarito.
+ for (let index = 0; index < 3; index += 1) {
+   elementsH3[index].className = 'description';
+ }
