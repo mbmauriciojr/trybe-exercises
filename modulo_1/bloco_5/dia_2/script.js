@@ -74,4 +74,8 @@ tagH1.className = 'title';
 
  // Exercício 4.2
  divRight.style.marginRight = 'auto';
+
+ // Exercício 5.2
+ let changeBgColor = document.querySelector('.center-content').parentElement;
+ changeBgColor.style.backgroundColor = 'green';
  
