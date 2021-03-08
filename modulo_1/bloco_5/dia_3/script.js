@@ -24,9 +24,26 @@ function createCalendar() {
   for (index = 0; index < numberDays.length; index += 1) {
     let daysMonth = numberDays[index];
     let daysList = document.createElement('li');
-    daysList.innerHTML = daysMonth;
+    
 
-    daysMonthList.appendChild(daysList);
+    if (daysMonth === 24 | daysMonth === 31) {
+      daysList.className = 'day holiday';
+      daysList.innerHTML = daysMonth;
+      daysMonthList.appendChild(daysList);
+    } if (daysMonth === 4 || daysMonth === 11 || daysMonth === 18) {
+      daysList.className = 'day friday';
+      daysList.innerHTML = daysMonth;
+      daysMonthList.appendChild(daysList);
+    } if (daysMonth === 25) {
+      daysList.className = 'day holiday friday';
+      daysList.innerHTML = daysMonth;
+      daysMonthList.appendChild(daysList);
+    } else {
+      daysList.className = 'day';
+      daysList.innerHTML = daysMonth;
+      daysMonthList.appendChild(daysList);
+    }
+    
   }
 }
 
@@ -47,3 +64,23 @@ holidaysCreate();
 
 // Exercício 3
 
+function buttonHolidayClick(){
+  let actionButton = document.querySelector('#btn-holiday');
+  let holidayDays = document.querySelectorAll('.holiday');
+  let backgroundColorChange = 'red';
+  let normalcolor = 'white';
+
+  actionButton.addEventListener('click', function() {
+    for (let index = 0; index < holidayDays.length; index += 1) {
+      if (holidayDays[index].style.backgroundColor === normalcolor) {
+        holidayDays[index].style.backgroundColor = backgroundColorChange;
+      } else {
+        holidayDays[index].style.backgroundColor = normalcolor;
+      }
+    }
+  })
+};
+
+buttonHolidayClick();
+
+  
