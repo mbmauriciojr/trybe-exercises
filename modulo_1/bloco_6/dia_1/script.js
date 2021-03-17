@@ -1,7 +1,7 @@
 function checkDate() {
-  const checkDay = parseInt(document.getElementById('input-day'));
-  const checkMonth = parseInt(document.getElementById('input-month'));
-  const checkYear = parseInt(document.getElementById('input-year'));
+  const checkDay = document.cvForm.dia.value;
+  const checkMonth = document.cvForm.checkMonth.value;
+  const checkYear = document.cvForm.year.value;
 
   if (checkDay < 0 && checkDay > 31) {
     return 'Formato de dia inválido';
@@ -14,6 +14,6 @@ function checkDate() {
   }
 }
 
-const buttonSendForm = getElementById('button-enviar');
+const buttonSendForm = document.getElementById('button-enviar');
 
 buttonSendForm.addEventListener('click', checkDate);
