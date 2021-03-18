@@ -1,0 +1,7 @@
+#input-day, #input-month, #input-year {
+  width: 40px;
+}
+
+textarea {
+  resize: none;
+}
