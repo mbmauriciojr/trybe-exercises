@@ -25,5 +25,6 @@ figure {
   body {
     background-color: aquamarine;
     font-size: 18px;
+    margin: 40px;
   }
 }
