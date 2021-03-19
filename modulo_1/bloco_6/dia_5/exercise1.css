@@ -18,3 +18,9 @@ img {
 figure {
   margin: 10px;
 }
+
+/* Breakpoint 800px */
+
+@media screen and (min-width: 800px) {
+  
+}
