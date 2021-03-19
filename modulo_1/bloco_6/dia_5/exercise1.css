@@ -27,4 +27,15 @@ figure {
     font-size: 18px;
     margin: 40px;
   }
+
+  .image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .image-container figure {
+    flex-basis: 45%;
+  }
+
 }
