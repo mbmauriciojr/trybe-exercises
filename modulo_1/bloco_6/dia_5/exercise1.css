@@ -39,3 +39,20 @@ figure {
   }
 
 }
+
+/* Breakpoint tela grande 1300px */
+
+@media screen and (min-width: 1300px) {
+  body {
+    background-color: brown;
+    font-size: 18px;
+    margin: 80px;
+    color: white;
+  }
+
+  .image-container {
+    background-color: cadetblue;
+  
+  }
+
+}
