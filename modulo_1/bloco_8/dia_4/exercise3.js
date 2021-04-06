@@ -1,4 +1,4 @@
-// Crie uma string com os nomes de todas as pessoas autoras. 
+// Calcule a média de idade que as pessoas autoras tinham quando seus respectivos livros foram lançados. 
 
 const assert = require('assert');
 
@@ -65,13 +65,14 @@ const books = [
   },
 ];
 
-function allNames() {
+const expectedResult = 43;
+
+function averageAge() {
   // escreva seu código aqui
-  let nameArray = books.map((book) => book.author.name);
-  nameArray = nameArray.reduce((acc, curr) => `${acc}, ${curr}`);
-  return nameArray = `Nomes: ${nameArray}.`;
+  const authorAges = books.map((book) => book.releaseYear - book.author.birthYear);
+  return authorAges.reduce((acc, curr) => acc + curr) / authorAges.length;
 }
 
-assert.deepStrictEqual(allNames(), 'Nomes: George R. R. Martin, J. R. R. Tolkien, Isaac Asimov, Frank Herbert, Stephen King, H. P. Lovecraft.');
+assert.strictEqual(averageAge(), expectedResult);
 
-//console.log(allNames());
+//console.log(averageAge());
