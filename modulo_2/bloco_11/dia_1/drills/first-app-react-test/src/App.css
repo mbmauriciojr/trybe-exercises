@@ -1,0 +1,19 @@
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.hello-class {
+  color: rgb(255, 77, 52);
+  font-weight: 700;
+  text-align: center;
+  background-color: burlywood ;
+}
+
+.component-test {
+  background-color: brown;
+  max-width: 200px;
+  padding: 10px;
+  align-self: center; 
+}
