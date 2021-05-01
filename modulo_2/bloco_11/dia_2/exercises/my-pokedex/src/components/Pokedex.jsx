@@ -8,7 +8,7 @@ class Pokedex extends React.Component {
     const arrayPokemon = pokemons;
     return(
       <div className="pokedex-container">
-        {arrayPokemon.map((pokemon, index) => <Pokemon key={index} pokemon={pokemon} />)}
+        {arrayPokemon.map((pokemon, id) => <Pokemon key={id} pokemon={pokemon} />)}
       </div>
     );
   }
